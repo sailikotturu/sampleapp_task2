@@ -12,15 +12,15 @@
     tools:context="com.example.sailik.sampleapp.MainActivity">
 
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
 
         android:layout_marginTop="16dp"
         android:id="@+id/imageView"
         android:paddingBottom="40dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        app:srcCompat="@drawable/img_android" />
+        android:src="@drawable/image_android" />
 
     <TextView
         android:text="Which Android version is this?"
@@ -54,7 +54,16 @@
         android:layout_alignLeft="@+id/edit_Text"
         android:layout_alignStart="@+id/edit_Text"
         android:layout_marginTop="26dp"
-        android:id="@+id/checkbutton"
-        android:onClick="sendMessage" />
+        android:id="@+id/checkbutton" />
+
+    <TextView
+        android:text=""
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checkbutton"
+        android:layout_alignLeft="@+id/checkbutton"
+        android:layout_alignStart="@+id/checkbutton"
+        android:layout_marginTop="24dp"
+        android:id="@+id/textView2" />
 
 </RelativeLayout>
