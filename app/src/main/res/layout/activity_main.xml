@@ -13,7 +13,7 @@
 
     <ImageView
         android:layout_width="300dp"
-        android:layout_height="200dp"
+        android:layout_height="100dp"
 
         android:layout_marginTop="16dp"
         android:id="@+id/imageView"
@@ -35,35 +35,62 @@
         android:layout_alignRight="@+id/imageView"
         android:layout_alignEnd="@+id/imageView" />
 
-    <EditText
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
-        android:inputType="numberDecimal"
-
-        android:layout_below="@+id/textView"
-        android:layout_alignLeft="@+id/imageView"
-        android:layout_alignStart="@+id/imageView"
-
-        android:id="@+id/edit_Text" />
 
     <Button
-        android:text="@string/button_send"
+        android:text="@string/option_1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/edit_Text"
-        android:layout_alignLeft="@+id/edit_Text"
-        android:layout_alignStart="@+id/edit_Text"
-        android:layout_marginTop="26dp"
-        android:id="@+id/checkbutton" />
+        android:id="@+id/option1"
+        android:layout_below="@+id/imageView"
+        android:layout_marginTop="46dp"
+        android:onClick="selectFrag"
+        android:layout_alignLeft="@+id/imageView"
+        android:layout_alignStart="@+id/imageView" />
 
-    <TextView
-        android:text=""
+    <Button
+        android:text="3.0"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/checkbutton"
-        android:layout_alignLeft="@+id/checkbutton"
-        android:layout_alignStart="@+id/checkbutton"
-        android:layout_marginTop="24dp"
-        android:id="@+id/textView2" />
+        android:layout_alignTop="@+id/option1"
+        android:layout_alignRight="@+id/imageView"
+        android:layout_alignEnd="@+id/imageView"
+        android:layout_marginRight="61dp"
+        android:layout_marginEnd="61dp"
+        android:id="@+id/option2"
+        android:onClick="selectFrag"/>
+
+    <Button
+        android:text="5.0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/option1"
+        android:layout_alignLeft="@+id/option1"
+        android:layout_alignStart="@+id/option1"
+        android:layout_marginTop="19dp"
+        android:id="@+id/option3"
+        android:onClick="selectFrag"/>
+
+    <Button
+        android:text="4.4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/option4"
+        android:layout_alignBaseline="@+id/option3"
+        android:layout_alignBottom="@+id/option3"
+        android:layout_alignLeft="@+id/option2"
+        android:layout_alignStart="@+id/option2"
+        android:onClick="selectFrag"/>
+
+    <fragment
+        android:name="com.example.sailik.sampleapp.CheckFrag"
+        android:id="@+id/fragment_place"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/option3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="23dp"></fragment>
+
+
 
 </RelativeLayout>

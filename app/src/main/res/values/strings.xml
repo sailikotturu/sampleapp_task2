@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">SampleApp</string>
-    <string name="button_send">check</string>
+    <string name="option_1">4.1</string>
+    <string name="option_2">3.0</string>
+    <string name="option_3">5.0</string>
+    <string name="option_4">4.4</string>
 </resources>
